@@ -3,7 +3,7 @@ MAINTAINER Ian Blenke <ian@blenke.com>
 
 ENV COTURN_VERSION 4.5.0.5
 
-RUN apk add --no-cache --update bash curl git make build-base automake autoconf readline readline-dev gettext libcrypto1.0 libressl libressl-dev libevent libevent-dev linux-headers sqlite sqlite-libs sqlite-dev mariadb-libs mysql-dev postgresql postgresql-dev sqlite hiredis hiredis-dev jq && \
+RUN apk add --no-cache --update bash curl git make build-base automake autoconf readline readline-dev gettext libcrypto1.0 libressl libressl-dev libevent libevent-dev linux-headers sqlite sqlite-libs sqlite-dev mariadb-libs mariadb-client-libs mysql-dev postgresql postgresql-dev sqlite hiredis hiredis-dev jq && \
 ######################################################################
 ## Adding mongodb from alpine edge adds 130M to the 44M image size. ##
 ## Uncomment the apk line below if you really need this.            ##
